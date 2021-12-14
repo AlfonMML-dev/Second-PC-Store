@@ -49,17 +49,6 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.97" />
 
-    <Button
-        android:id="@+id/button_first"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="@string/next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
@@ -78,6 +67,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tV_Presentation"
+        android:textSize="@dimen/txSize_tV_Style"
         app:layout_constraintBottom_toTopOf="@+id/guideline_H1_First"
         app:layout_constraintEnd_toEndOf="@+id/guideline_V1_First"
         app:layout_constraintStart_toStartOf="@+id/guideline_V0_First"
@@ -99,7 +89,8 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txSize_ET_Style" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -111,7 +102,7 @@
         app:endIconDrawable="@drawable/ic_baseline_remove_red_eye_24"
         app:expandedHintEnabled="true"
         app:helperText="@string/helper_tx"
-        app:layout_constraintBottom_toTopOf="@+id/guideline_H2_First"
+        app:layout_constraintBottom_toTopOf="@+id/bt_Login_First"
         app:layout_constraintEnd_toEndOf="@+id/guideline_V1_First"
         app:layout_constraintStart_toStartOf="@+id/guideline_V0_First"
         app:layout_constraintTop_toBottomOf="@+id/txInput_Email"
@@ -120,8 +111,40 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txSize_ET_Style" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/bt_Login_First"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_Login"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_H2_First"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_V1_First"
+        app:layout_constraintStart_toStartOf="@+id/guideline_V0_First"
+        app:layout_constraintTop_toBottomOf="@+id/txInput_Pass" />
+
+    <TextView
+        android:id="@+id/tv_DontHave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tV_DontHave"
+        android:textSize="@dimen/txSize_tV_Style"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_H3_First"
+        app:layout_constraintEnd_toStartOf="@+id/bt_SignUp_First"
+        app:layout_constraintStart_toStartOf="@+id/guideline_V0_First"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_H2_First" />
+
+    <Button
+        android:id="@+id/bt_SignUp_First"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_SingUp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_H3_First"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_V1_First"
+        app:layout_constraintStart_toEndOf="@+id/tv_DontHave"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_H2_First" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

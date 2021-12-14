@@ -25,7 +25,7 @@
         <br>Andalusia</br>
     </string>
     <string name="tV_Have">Already have an account?</string>
-    <string name="tV_DontHave">Don`t have an account yet?</string>
+    <string name="tV_DontHave">Don`t have an account?</string>
     <string name="tV_SignUp">Sing up</string>
     <string name="txInput_Name">Name</string>
     <string name="txInput_LastName">LastName</string>
