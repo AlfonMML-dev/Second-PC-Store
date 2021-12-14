@@ -1,4 +1,4 @@
-package home.amml.ad.second_pc_store;
+package home.amml.ad.second_pc_store.view.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
+import home.amml.ad.second_pc_store.R;
 import home.amml.ad.second_pc_store.databinding.FragmentFirstBinding;
 
 public class FirstFragment extends Fragment {

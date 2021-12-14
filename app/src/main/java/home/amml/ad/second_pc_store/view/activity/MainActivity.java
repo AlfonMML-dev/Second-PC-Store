@@ -1,4 +1,4 @@
-package home.amml.ad.second_pc_store;
+package home.amml.ad.second_pc_store.view.activity;
 
 import android.os.Bundle;
 
@@ -13,6 +13,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import home.amml.ad.second_pc_store.R;
 import home.amml.ad.second_pc_store.databinding.ActivityMainBinding;
 
 import android.view.Menu;
