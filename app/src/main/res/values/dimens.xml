@@ -1,3 +1,6 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="txSize_bt_Style">14sp</dimen>
+    <dimen name="txSize_ET_Style">20sp</dimen>
+    <dimen name="txSize_tV_Style">20sp</dimen>
 </resources>

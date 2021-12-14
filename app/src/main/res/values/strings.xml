@@ -9,4 +9,24 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="bt_Login">LOG IN</string>
+    <string name="bt_SingIn">SING IN</string>
+    <string name="bt_SingUp">SING UP</string>
+    <string name="tV_Required">Required</string>
+    <string name="tV_RequiredEmpty"></string>
+    <string name="tV_Presentation">Best Institute of Andalusia</string>
+    <string name="tV_Presentation_Land">
+        <br>Best Institute</br>
+        <br>of</br>
+        <br>Andalusia</br>
+    </string>
+    <string name="tV_Have">Already have an account?</string>
+    <string name="tV_DontHave">Don`t have an account yet?</string>
+    <string name="tV_SignUp">Sing up</string>
+    <string name="txInput_Name">Name</string>
+    <string name="txInput_LastName">LastName</string>
+    <string name="txInput_Email">E-mail</string>
+    <string name="txInput_Pass">Password</string>
+    <string name="contentDescrip_iView_Logoizv">IZV\'s image</string>
 </resources>
