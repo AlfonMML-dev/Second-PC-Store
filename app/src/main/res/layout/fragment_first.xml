@@ -4,16 +4,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".view.fragment.FirstFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_V0_First"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_V1_First"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_H0_First"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_H1_First"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_H2_First"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_H3_First"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97" />
 
     <Button
         android:id="@+id/button_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="104dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:rotation="270"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/tv_Presentation"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_V1_First"
+        app:layout_constraintStart_toStartOf="@+id/guideline_V0_First"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_H0_First" />
+
+    <TextView
+        android:id="@+id/tv_Presentation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tV_Presentation"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_H1_First"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_V1_First"
+        app:layout_constraintStart_toStartOf="@+id/guideline_V0_First"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txInput_Email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/txInput_Email"
+        app:expandedHintEnabled="true"
+        app:helperText="@string/helper_tx"
+        app:layout_constraintBottom_toTopOf="@+id/txInput_Pass"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_V1_First"
+        app:layout_constraintStart_toStartOf="@+id/guideline_V0_First"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_H1_First"
+        app:startIconDrawable="@drawable/ic_baseline_email_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txInput_Pass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/txInput_Pass"
+        app:endIconDrawable="@drawable/ic_baseline_remove_red_eye_24"
+        app:expandedHintEnabled="true"
+        app:helperText="@string/helper_tx"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_H2_First"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_V1_First"
+        app:layout_constraintStart_toStartOf="@+id/guideline_V0_First"
+        app:layout_constraintTop_toBottomOf="@+id/txInput_Email"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
