@@ -27,7 +27,7 @@ public class User implements Parcelable {
     @ColumnInfo(name = "urlUserPic")
     public String urlUserPic;
 
-    public User() {}
+//    public User() {}
 
     public User(long idUser, @NonNull String username, @NonNull String password, String urlUserPic) {
         this.idUser = idUser;

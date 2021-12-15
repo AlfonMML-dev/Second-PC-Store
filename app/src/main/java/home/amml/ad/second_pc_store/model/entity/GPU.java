@@ -25,7 +25,7 @@ public class GPU implements Parcelable {
     @ColumnInfo(name = "type")
     public String type;
 
-    public GPU() {}
+//    public GPU() {}
 
     public GPU(@NonNull String model, @NonNull String type) {
         this.model = model;

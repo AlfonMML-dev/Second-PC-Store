@@ -1,6 +1,7 @@
 package home.amml.ad.second_pc_store.model.room;
 
 import androidx.lifecycle.LiveData;
+import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
@@ -19,6 +20,7 @@ import home.amml.ad.second_pc_store.model.entity.UserPublication;
 import home.amml.ad.second_pc_store.model.entity.UserPurchase;
 import home.amml.ad.second_pc_store.model.entity.UserSell;
 
+@Dao
 public interface SecondPCDao {
 
     //Insert Methods
@@ -84,6 +86,9 @@ public interface SecondPCDao {
 
     @Query("select * from user where idUser = :idUser order by username asc")
     LiveData<User> getUser(long idUser);
+
+    @Query("select * from user where idUser = :idUser and password = :passUser order by username asc")
+    LiveData<User> getUserWithPass(long idUser, String passUser);
 
     @Query("select * from computer order by nameProduct asc")
     LiveData<List<Computer>> getComputers();

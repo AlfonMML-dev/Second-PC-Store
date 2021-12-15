@@ -11,7 +11,7 @@ import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "computer",
-        indices = {@Index(value = {"cpu", "ram"})},
+        indices = {@Index(value = "cpu"), @Index(value = "ram"), @Index(value = "gpuModel")},
         foreignKeys = @ForeignKey(entity = GPU.class, parentColumns = "model", childColumns = "gpuModel",
                 onDelete = ForeignKey.CASCADE))
 public class Computer implements Parcelable {
@@ -69,8 +69,7 @@ public class Computer implements Parcelable {
     @ColumnInfo(name = "numHDMIPorts")
     public short numHDMIPorts;
 
-    public Computer() {
-    }
+//    public Computer() {}
 
     public Computer(long idComputer, @NonNull String nameProduct, @NonNull String typeComputer,
                     @NonNull String cpu, @NonNull String gpuModel, short ram,

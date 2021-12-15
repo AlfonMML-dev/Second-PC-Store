@@ -7,14 +7,14 @@ import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
+import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "purchase",
+        indices = {@Index(value = "idProduct")},
         foreignKeys = {
-        @ForeignKey(entity = User.class, parentColumns ="idUser", childColumns = {"idBuyer", "idSeller"},
-                onDelete = ForeignKey.CASCADE),
-        @ForeignKey(entity = Computer.class, parentColumns = "idComputer", childColumns = "idProduct",
-                onDelete = ForeignKey.CASCADE)})
+                @ForeignKey(entity = Computer.class, parentColumns = "idComputer", childColumns = "idProduct",
+                        onDelete = ForeignKey.CASCADE)})
 public class Purchase implements Parcelable {
     @PrimaryKey(autoGenerate = true)
     public long idPurchase;
@@ -35,10 +35,10 @@ public class Purchase implements Parcelable {
     @ColumnInfo(name = "sellPrice")
     public double sellPrice;
 
-    @ColumnInfo(name="date")
+    @ColumnInfo(name = "date")
     public String date;
 
-    public Purchase() {}
+//    public Purchase() {}
 
     public Purchase(long idPurchase, long idBuyer, long idSeller, long idProduct, double sellPrice, String date) {
         this.idPurchase = idPurchase;

@@ -38,6 +38,10 @@ public class UserViewModel extends AndroidViewModel {
         return repository.getLiveUser(idUser);
     }
 
+    public LiveData<User> getLiveUserWithPass(long idUser, String passUser) {
+        return repository.getLiveUserWithPass(idUser, passUser);
+    }
+
     public LiveData<List<User>> getLiveUsers() {
         return repository.getLiveUsers();
     }

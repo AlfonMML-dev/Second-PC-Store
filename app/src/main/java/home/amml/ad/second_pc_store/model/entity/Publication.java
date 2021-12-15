@@ -11,6 +11,7 @@ import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "publication",
+        indices = {@Index(value = "idUserPost"), @Index(value = "idProduct")},
         foreignKeys = {
         @ForeignKey(entity = User.class, parentColumns = "idUser", childColumns = "idUserPost",
                 onDelete = ForeignKey.CASCADE),
@@ -40,7 +41,7 @@ public class Publication implements Parcelable {
     @ColumnInfo(name = "urlComputer")
     public String urlComputer;
 
-    public Publication() {}
+//    public Publication() {}
 
     public Publication(long idPost, long idUserPost, long idProduct, double sellPrice,
                        @NonNull String date, @NonNull String urlComputer) {

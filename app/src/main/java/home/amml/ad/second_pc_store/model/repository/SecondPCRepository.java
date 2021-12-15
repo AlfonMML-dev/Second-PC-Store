@@ -31,6 +31,7 @@ public class SecondPCRepository {
     private LiveData<Publication> livePublication;
     private LiveData<Purchase> livePurchase;
     private LiveData<User> liveUser;
+    private LiveData<User> liveUserWithPass;
 
     private LiveData<List<Computer>> liveComputers;
     private LiveData<List<GPU>> liveGPUs;
@@ -220,6 +221,13 @@ public class SecondPCRepository {
             liveUser = dao.getUser(idUser);
         }
         return liveUser;
+    }
+
+    public LiveData<User> getLiveUserWithPass(long idUser, String passUser) {
+        if(liveUserWithPass == null){
+            liveUserWithPass = dao.getUserWithPass(idUser, passUser);
+        }
+        return liveUserWithPass;
     }
 
     public LiveData<List<Computer>> getLiveComputers() {
