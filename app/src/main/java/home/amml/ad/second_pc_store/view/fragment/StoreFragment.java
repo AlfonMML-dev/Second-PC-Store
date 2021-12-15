@@ -10,11 +10,10 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import home.amml.ad.second_pc_store.R;
-import home.amml.ad.second_pc_store.databinding.FragmentFirstBinding;
+import home.amml.ad.second_pc_store.databinding.FragmentStoreBinding;
 
-public class FirstFragment extends Fragment {
-
-    private FragmentFirstBinding binding;
+public class StoreFragment extends Fragment {
+    private FragmentStoreBinding binding;
 
     @Override
     public View onCreateView(
@@ -22,7 +21,7 @@ public class FirstFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentFirstBinding.inflate(inflater, container, false);
+        binding = FragmentStoreBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -30,18 +29,10 @@ public class FirstFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.btLoginFirst.setOnClickListener(new View.OnClickListener() {
+        binding.buttonStore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(FirstFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
-            }
-        });
-
-        binding.btSignUpFirst.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(FirstFragment.this)
+                NavHostFragment.findNavController(StoreFragment.this)
                         .navigate(R.id.action_FirstFragment_to_SecondFragment);
             }
         });
@@ -52,5 +43,4 @@ public class FirstFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-
 }

@@ -11,7 +11,7 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "purchase",
         foreignKeys = {
-        @ForeignKey(entity = User.class, parentColumns = "idUser", childColumns = {"idBuyer", "idSeller"},
+        @ForeignKey(entity = User.class, parentColumns ="idUser", childColumns = {"idBuyer", "idSeller"},
                 onDelete = ForeignKey.CASCADE),
         @ForeignKey(entity = Computer.class, parentColumns = "idComputer", childColumns = "idProduct",
                 onDelete = ForeignKey.CASCADE)})

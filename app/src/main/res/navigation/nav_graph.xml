@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_storeFragment"
+            app:destination="@id/storeFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -24,5 +27,12 @@
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_storeFragment"
+            app:destination="@id/storeFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/storeFragment"
+        android:name="home.amml.ad.second_pc_store.view.fragment.StoreFragment"
+        android:label="StoreFragment" />
 </navigation>

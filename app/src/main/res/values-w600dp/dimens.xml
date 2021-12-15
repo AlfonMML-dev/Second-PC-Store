@@ -1,3 +1,8 @@
 <resources>
     <dimen name="fab_margin">48dp</dimen>
+    <dimen name="cornerRadiusSize">20dp</dimen>
+    <dimen name="padding_bt">30dp</dimen>
+    <dimen name="txSize_bt_Style">40sp</dimen>
+    <dimen name="txSize_ET_Style">42sp</dimen>
+    <dimen name="txSize_tV_Style">50sp</dimen>
 </resources>

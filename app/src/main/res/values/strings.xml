@@ -13,12 +13,13 @@
     <string name="bt_Login">LOG IN</string>
     <string name="bt_SingIn">SING IN</string>
     <string name="bt_SingUp">SING UP</string>
+    <string name="bt_LogOut">LOG OUT</string>
     <string name="eT_Email">Put your e-mail address</string>
     <string name="eT_Pass">Put your password</string>
     <string name="helper_tx">Required*</string>
     <string name="tV_Required">Required</string>
     <string name="tV_RequiredEmpty"></string>
-    <string name="tV_Presentation">Buy or Sell at the best price</string>
+    <string name="tV_Presentation">Buy and Sell at the best price</string>
     <string name="tV_Presentation_Land">
         <br>Best Institute</br>
         <br>of</br>
@@ -27,9 +28,12 @@
     <string name="tV_Have">Already have an account?</string>
     <string name="tV_DontHave">Don`t have an account?</string>
     <string name="tV_SignUp">Sing up</string>
+    <string name="tV_WaitingYou">Waiting you enjoy the experience</string>
     <string name="txInput_Name">Name</string>
     <string name="txInput_LastName">LastName</string>
-    <string name="txInput_Email">E-mail</string>
+    <string name="txInput_User">User</string>
     <string name="txInput_Pass">Password</string>
-    <string name="contentDescrip_iView_Logoizv">IZV\'s image</string>
+    <string name="txInput_ConfirmPass">Confirm password</string>
+    <string name="txInput_UrlUserPic">Upload a picture</string>
+    <string name="contentDescrip_iView_Logo">Company\'s logo</string>
 </resources>

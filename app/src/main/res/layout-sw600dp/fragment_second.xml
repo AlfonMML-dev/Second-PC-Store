@@ -64,7 +64,6 @@
 
     <TextView
         android:id="@+id/tv_WaitingYou"
-        style="@style/tV_Style"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/tV_WaitingYou"
@@ -93,7 +92,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/txInput_UserName_Second"
-                    style="@style/inputText_Style"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:hint="@string/txInput_User"
@@ -113,7 +112,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/txInput_Pass_Second"
-                    style="@style/inputText_Style"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:hint="@string/txInput_Pass"
@@ -135,7 +134,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/txInput_ConfirmPass"
-                    style="@style/inputText_Style"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:hint="@string/txInput_ConfirmPass"
@@ -157,7 +156,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/txInput_UrlUserPic_Second"
-                    style="@style/inputText_Style"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:hint="@string/txInput_UrlUserPic"
@@ -176,7 +175,7 @@
 
                 <Button
                     android:id="@+id/bt_SignUp_Second"
-                    style="@style/bt_Button_Style"
+                    style="@style/Widget.MaterialComponents.Button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/bt_SingUp"
@@ -190,7 +189,6 @@
 
     <TextView
         android:id="@+id/tv_Have"
-        style="@style/tV_Style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tV_Have"
@@ -201,7 +199,7 @@
 
     <Button
         android:id="@+id/bt_LogIn_Second"
-        style="@style/bt_TextButton_Style"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"

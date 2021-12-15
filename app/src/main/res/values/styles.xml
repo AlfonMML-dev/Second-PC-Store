@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="bt_Button_Style" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/button_back_shape</item>
+        <item name="backgroundTint"/>
+        <item name="android:textSize">@dimen/txSize_bt_Style</item>
+        <item name="android:padding">@dimen/padding_bt</item>
+    </style>
+
+    <style name="bt_TextButton_Style" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/textButton_Color</item>
+        <item name="android:textSize">@dimen/txSize_bt_Style</item>
+    </style>
+
+    <style name="inputText_Style" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomEnd">@dimen/cornerRadiusSize</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/cornerRadiusSize</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/cornerRadiusSize</item>
+        <item name="boxCornerRadiusTopStart">@dimen/cornerRadiusSize</item>
+        <item name="helperTextTextColor">@color/hint_Color</item>
+        <item name="android:textColorHint">@color/hint_Color</item>
+    </style>
+
+    <style name="tV_Style" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/hint_Color</item>
+        <item name="android:textSize">@dimen/txSize_tV_Style</item>
+    </style>
+</resources>
