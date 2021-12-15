@@ -55,6 +55,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:adjustViewBounds="true"
+        android:contentDescription="@string/contentDescrip_iView_Logo"
         android:rotation="270"
         android:src="@drawable/logo"
         app:layout_constraintBottom_toTopOf="@+id/guideline_H1_Second"
