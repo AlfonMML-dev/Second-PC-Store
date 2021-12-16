@@ -15,6 +15,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import home.amml.ad.second_pc_store.R;
 import home.amml.ad.second_pc_store.databinding.ActivityMainBinding;
+import home.amml.ad.second_pc_store.model.entity.User;
 
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
+
+    private static User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,5 +76,13 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public static User getUser() {
+        return user;
+    }
+
+    public static void setUser(User user) {
+        MainActivity.user = user;
     }
 }

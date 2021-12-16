@@ -19,6 +19,7 @@ import com.google.android.material.textfield.TextInputLayout;
 
 import home.amml.ad.second_pc_store.R;
 import home.amml.ad.second_pc_store.databinding.FragmentFirstBinding;
+import home.amml.ad.second_pc_store.model.entity.User;
 import home.amml.ad.second_pc_store.view.activity.MainActivity;
 import home.amml.ad.second_pc_store.viewmodel.UserViewModel;
 
@@ -56,7 +57,12 @@ public class FirstFragment extends Fragment {
         boolean salida = true;
         userName = binding.txInputUserNameFirst.getEditText().getText().toString().trim();
         userPass = binding.txInputPassFirst.getEditText().getText().toString();
-
+        User user = uvm.getLiveUserWithPass(userName, userPass).getValue();
+        if (user != null){
+            ((MainActivity)getActivity()).setUser(user);
+        } else{
+            salida = false;
+        }
         return salida;
     }
 
@@ -94,7 +100,8 @@ public class FirstFragment extends Fragment {
 
     private void showAlert() {
         androidx.appcompat.app.AlertDialog.Builder builder  = new AlertDialog.Builder(this.getActivity());
-        builder.setTitle("Incorrect user or password")
+        builder.setTitle("Error")
+                .setMessage("Incorrect user or password")
                 .setPositiveButton( android.R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
