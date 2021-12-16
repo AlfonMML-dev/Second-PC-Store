@@ -223,9 +223,9 @@ public class SecondPCRepository {
         return liveUser;
     }
 
-    public LiveData<User> getLiveUserWithPass(long idUser, String passUser) {
+    public LiveData<User> getLiveUserWithPass(String userName, String passUser) {
         if(liveUserWithPass == null){
-            liveUserWithPass = dao.getUserWithPass(idUser, passUser);
+            liveUserWithPass = dao.getUserWithPass(userName, passUser);
         }
         return liveUserWithPass;
     }

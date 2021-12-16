@@ -82,7 +82,7 @@
         android:hint="@string/txInput_User"
         app:expandedHintEnabled="true"
         app:helperText="@string/helper_tx"
-        app:layout_constraintBottom_toTopOf="@+id/txInput_Pass_Second"
+        app:layout_constraintBottom_toTopOf="@+id/txInput_Pass_First"
         app:layout_constraintEnd_toEndOf="@+id/guideline_V1_First"
         app:layout_constraintStart_toStartOf="@+id/guideline_V0_First"
         app:layout_constraintTop_toBottomOf="@+id/guideline_H1_First"
@@ -95,7 +95,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txInput_Pass_Second"
+        android:id="@+id/txInput_Pass_First"
         style="@style/inputText_Style"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -125,7 +125,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline_H2_First"
         app:layout_constraintEnd_toEndOf="@+id/guideline_V1_First"
         app:layout_constraintStart_toStartOf="@+id/guideline_V0_First"
-        app:layout_constraintTop_toBottomOf="@+id/txInput_Pass_Second" />
+        app:layout_constraintTop_toBottomOf="@+id/txInput_Pass_First" />
 
     <TextView
         android:id="@+id/tv_DontHave"

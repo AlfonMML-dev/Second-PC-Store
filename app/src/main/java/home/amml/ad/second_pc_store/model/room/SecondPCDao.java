@@ -87,8 +87,8 @@ public interface SecondPCDao {
     @Query("select * from user where idUser = :idUser order by username asc")
     LiveData<User> getUser(long idUser);
 
-    @Query("select * from user where idUser = :idUser and password = :passUser order by username asc")
-    LiveData<User> getUserWithPass(long idUser, String passUser);
+    @Query("select * from user where username = :username and password = :passUser order by username asc")
+    LiveData<User> getUserWithPass(String username, String passUser);
 
     @Query("select * from computer order by nameProduct asc")
     LiveData<List<Computer>> getComputers();
