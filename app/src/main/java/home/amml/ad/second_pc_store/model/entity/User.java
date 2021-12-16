@@ -29,8 +29,7 @@ public class User implements Parcelable {
 
 //    public User() {}
 
-    public User(long idUser, @NonNull String username, @NonNull String password, String urlUserPic) {
-        this.idUser = idUser;
+    public User(@NonNull String username, @NonNull String password, String urlUserPic) {
         this.username = username;
         this.password = password;
         this.urlUserPic = urlUserPic;
