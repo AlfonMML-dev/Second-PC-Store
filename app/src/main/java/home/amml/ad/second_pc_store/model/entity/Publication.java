@@ -43,9 +43,8 @@ public class Publication implements Parcelable {
 
 //    public Publication() {}
 
-    public Publication(long idPost, long idUserPost, long idProduct, double sellPrice,
+    public Publication(long idUserPost, long idProduct, double sellPrice,
                        @NonNull String date, @NonNull String urlComputer) {
-        this.idPost = idPost;
         this.idUserPost = idUserPost;
         this.idProduct = idProduct;
         this.sellPrice = sellPrice;

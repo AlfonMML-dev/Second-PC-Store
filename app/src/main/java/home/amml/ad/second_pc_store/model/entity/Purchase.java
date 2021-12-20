@@ -40,8 +40,7 @@ public class Purchase implements Parcelable {
 
 //    public Purchase() {}
 
-    public Purchase(long idPurchase, long idBuyer, long idSeller, long idProduct, double sellPrice, String date) {
-        this.idPurchase = idPurchase;
+    public Purchase(long idBuyer, long idSeller, long idProduct, double sellPrice, String date) {
         this.idBuyer = idBuyer;
         this.idSeller = idSeller;
         this.idProduct = idProduct;

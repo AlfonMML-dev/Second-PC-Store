@@ -75,6 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/guideline_H0_Second" />
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fillViewport="true"
@@ -194,6 +195,7 @@
         style="@style/tV_Style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:text="@string/tV_Have"
         app:layout_constraintBaseline_toBaselineOf="@+id/bt_LogIn_Second"
         app:layout_constraintEnd_toStartOf="@+id/bt_LogIn_Second"
@@ -205,11 +207,12 @@
         style="@style/bt_TextButton_Style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
         android:text="@string/bt_Login"
         app:layout_constraintBottom_toTopOf="@+id/guideline_H3_Second"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.35"
-        app:layout_constraintStart_toEndOf="@+id/tv_Have" />
+        app:layout_constraintStart_toEndOf="@+id/tv_Have"
+        app:layout_constraintTop_toBottomOf="@+id/nestedScrollView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

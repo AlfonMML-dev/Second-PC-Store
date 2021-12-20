@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_V0_UpPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_V1_UpPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_H0_UpPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_H1_UpPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_H2_UpPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <TextView
+        android:id="@+id/tv_Username_UpPost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_H1_UpPost"
+        app:layout_constraintEnd_toStartOf="@id/iView_UserPhoto_UpPost"
+        app:layout_constraintStart_toEndOf="@+id/guideline_V0_UpPost"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_H0_UpPost" />
+
+    <ImageView
+        android:id="@+id/iView_UserPhoto_UpPost"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_H1_UpPost"
+        app:layout_constraintEnd_toStartOf="@id/guideline_V1_UpPost"
+        app:layout_constraintStart_toEndOf="@+id/tv_Username_UpPost"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_H0_UpPost"
+        app:srcCompat="@drawable/contacts_image" />
+
+    <TextView
+        android:id="@+id/tv_PC_Details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Computer features"
+        app:layout_constraintBottom_toTopOf="@+id/nestedScroll_PC_details_UpPost"
+        app:layout_constraintEnd_toStartOf="@id/guideline_V1_UpPost"
+        app:layout_constraintStart_toEndOf="@+id/guideline_V0_UpPost"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_H1_UpPost" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScroll_PC_details_UpPost"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/tv_Publi_Details_UpPost"
+        app:layout_constraintEnd_toStartOf="@id/guideline_V1_UpPost"
+        app:layout_constraintStart_toEndOf="@+id/guideline_V0_UpPost"
+        app:layout_constraintTop_toBottomOf="@+id/tv_PC_Details">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/tv_Publi_Details_UpPost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Publication details"
+        app:layout_constraintBottom_toTopOf="@+id/nestedScroll_Publi_details_UpPost"
+        app:layout_constraintEnd_toStartOf="@id/guideline_V1_UpPost"
+        app:layout_constraintStart_toEndOf="@+id/guideline_V0_UpPost"
+        app:layout_constraintTop_toBottomOf="@+id/nestedScroll_PC_details_UpPost" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScroll_Publi_details_UpPost"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/bt_Cancel_UpPost"
+        app:layout_constraintEnd_toStartOf="@id/guideline_V1_UpPost"
+        app:layout_constraintStart_toEndOf="@+id/guideline_V0_UpPost"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Publi_Details_UpPost">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/bt_Cancel_UpPost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_H2_UpPost"
+        app:layout_constraintEnd_toStartOf="@id/bt_Post_UpPost"
+        app:layout_constraintStart_toEndOf="@+id/guideline_V0_UpPost"
+        app:layout_constraintTop_toBottomOf="@+id/nestedScroll_Publi_details_UpPost" />
+
+    <Button
+        android:id="@+id/bt_Post_UpPost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_H2_UpPost"
+        app:layout_constraintEnd_toStartOf="@id/guideline_V1_UpPost"
+        app:layout_constraintStart_toEndOf="@+id/bt_Cancel_UpPost"
+        app:layout_constraintTop_toBottomOf="@+id/nestedScroll_Publi_details_UpPost" />
+</androidx.constraintlayout.widget.ConstraintLayout>

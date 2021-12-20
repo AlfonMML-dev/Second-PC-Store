@@ -14,10 +14,17 @@
         <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/AD/AD_Proyectos/Second-PC-Store/app/src/main/res/layout-land/fragment_first.xml" value="0.31040564373897706" />
         <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/AD/AD_Proyectos/Second-PC-Store/app/src/main/res/layout-sw600dp/fragment_first.xml" value="0.27424863387978143" />
         <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/AD/AD_Proyectos/Second-PC-Store/app/src/main/res/layout-sw600dp/fragment_second.xml" value="0.26058743169398907" />
+        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/AD/AD_Proyectos/Second-PC-Store/app/src/main/res/layout/activity_main.xml" value="0.3278985507246377" />
+        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/AD/AD_Proyectos/Second-PC-Store/app/src/main/res/layout/content_main.xml" value="0.3278985507246377" />
         <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/AD/AD_Proyectos/Second-PC-Store/app/src/main/res/layout/fragment_first.xml" value="0.33" />
         <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/AD/AD_Proyectos/Second-PC-Store/app/src/main/res/layout/fragment_profile.xml" value="0.35260416666666666" />
-        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/AD/AD_Proyectos/Second-PC-Store/app/src/main/res/layout/fragment_second.xml" value="0.33" />
-        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/AD/AD_Proyectos/Second-PC-Store/app/src/main/res/layout/fragment_store.xml" value="0.36367753623188404" />
+        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/AD/AD_Proyectos/Second-PC-Store/app/src/main/res/layout/fragment_purchase.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/AD/AD_Proyectos/Second-PC-Store/app/src/main/res/layout/fragment_sale.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/AD/AD_Proyectos/Second-PC-Store/app/src/main/res/layout/fragment_second.xml" value="0.3278985507246377" />
+        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/AD/AD_Proyectos/Second-PC-Store/app/src/main/res/layout/fragment_store.xml" value="0.33" />
+        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/AD/AD_Proyectos/Second-PC-Store/app/src/main/res/layout/fragment_up_post.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/AD/AD_Proyectos/Second-PC-Store/app/src/main/res/layout/post_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/AD/AD_Proyectos/Second-PC-Store/app/src/main/res/layout/purchase_item.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/AD/AD_Proyectos/Second-PC-Store/app/src/main/res/menu/menu_main.xml" value="0.36666666666666664" />
       </map>
     </option>
@@ -31,7 +38,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.33" />
+        <option name="scale" value="0.5" />
       </ProjectState>
     </option>
   </component>
